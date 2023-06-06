@@ -1,10 +1,12 @@
 import "./App.css";
+import { Button } from "@material-tailwind/react";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+        <Nav />
       </header>
     </div>
   );
