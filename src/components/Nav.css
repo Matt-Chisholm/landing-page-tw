@@ -1,3 +1,10 @@
 .navbar {
     top: 0;
+    background-color: transparent;
+    border-color: black;
+    color: whitesmoke;
+}
+
+.logo {
+    margin-right: 20rem;
 }

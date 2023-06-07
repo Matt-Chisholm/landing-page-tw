@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
   Card,
+  Img,
 } from "@material-tailwind/react";
 import "./Nav.css";
 
@@ -21,10 +22,17 @@ export default function Example() {
 
   const navList = (
     <ul className='mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
+      <div className='flex items-center gap-2'>
+        <img
+          className='h-full w-full lg:h-16 lg:w-16 logo'
+          src='https://img.icons8.com/color/480/minecraft-logo--v1.png'
+          alt='nature image'
+        />
+      </div>
       <Typography
         as='li'
         variant='small'
-        color='blue-gray'
+        color='whitesmoke'
         className='p-1 font-normal'>
         <a href='#' className='flex items-center'>
           About Us
@@ -33,7 +41,7 @@ export default function Example() {
       <Typography
         as='li'
         variant='small'
-        color='blue-gray'
+        color='whitesmoke'
         className='p-1 font-normal'>
         <a href='#' className='flex items-center'>
           Benefits
@@ -42,7 +50,7 @@ export default function Example() {
       <Typography
         as='li'
         variant='small'
-        color='blue-gray'
+        color='whitesmoke'
         className='p-1 font-normal'>
         <a href='#' className='flex items-center'>
           Features
@@ -54,22 +62,8 @@ export default function Example() {
   return (
     <>
       <Navbar className='navbar sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'>
-        <div className='flex items-center justify-between text-blue-gray-900'>
-          <div className='flex items-center gap-4'>
-            <Typography
-              as='a'
-              href='#'
-              className='mr-4 cursor-pointer py-1.5 font-medium'>
-              For Customers
-            </Typography>
-            <Typography
-              as='a'
-              href='#'
-              className='mr-4 cursor-pointer py-1.5 font-medium'>
-              For Developers
-            </Typography>
-          </div>
-          <div className='flex items-center gap-4'>
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center space-between gap-4'>
             <div className='mr-4 hidden lg:block'>{navList}</div>
             <Button
               variant='gradient'
@@ -120,29 +114,6 @@ export default function Example() {
           </Button>
         </MobileNav>
       </Navbar>
-      <div className='mx-auto max-w-screen-md py-12 mt-12'>
-        <Typography variant='h1' color='blue-gray' className='mb-2'>
-          Empowering people
-        </Typography>
-        <Typography variant='h2' color='blue-gray' className='mb-2'>
-          in the modern digital world
-        </Typography>
-        <Typography color='gray' className='font-normal'>
-          Can you help me out? you will get a lot of free exposure doing this
-          can my website be in english?. There is too much white space do less
-          with more, so that will be a conversation piece can you rework to make
-          the pizza look more delicious other agencies charge much lesser can
-          you make the blue bluer?. I think we need to start from scratch can my
-          website be in english?, yet make it sexy i&apos;ll pay you in a week
-          we don&apos;t need to pay upfront i hope you understand can you make
-          it stand out more?. Make the font bigger can you help me out? you will
-          get a lot of free exposure doing this that&apos;s going to be a chunk
-          of change other agencies charge much lesser. Are you busy this
-          weekend? I have a new project with a tight deadline that&apos;s going
-          to be a chunk of change. There are more projects lined up charge extra
-          the next time.
-        </Typography>
-      </div>
     </>
   );
 }
