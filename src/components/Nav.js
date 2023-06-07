@@ -7,6 +7,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import "./Nav.css";
 
 export default function Example() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -52,7 +53,7 @@ export default function Example() {
 
   return (
     <>
-      <Navbar className='sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'>
+      <Navbar className='navbar sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'>
         <div className='flex items-center justify-between text-blue-gray-900'>
           <div className='flex items-center gap-4'>
             <Typography
@@ -119,16 +120,12 @@ export default function Example() {
           </Button>
         </MobileNav>
       </Navbar>
-      <div className='mx-auto max-w-screen-md py-12'>
-        <Card className='mb-12 overflow-hidden'>
-          <img
-            alt='nature'
-            className='h-[32rem] w-full object-cover object-center'
-            src='https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80'
-          />
-        </Card>
+      <div className='mx-auto max-w-screen-md py-12 mt-12'>
+        <Typography variant='h1' color='blue-gray' className='mb-2'>
+          Empowering people
+        </Typography>
         <Typography variant='h2' color='blue-gray' className='mb-2'>
-          What is Material Tailwind
+          in the modern digital world
         </Typography>
         <Typography color='gray' className='font-normal'>
           Can you help me out? you will get a lot of free exposure doing this
