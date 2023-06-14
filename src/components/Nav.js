@@ -13,6 +13,8 @@ import "./Nav.css";
 export default function Example() {
   const [openNav, setOpenNav] = React.useState(false);
 
+  const navBarRef = React.useRef(null);
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
